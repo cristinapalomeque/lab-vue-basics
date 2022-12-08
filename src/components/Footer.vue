@@ -6,16 +6,9 @@
   <button @click="showFooter = !showFooter">Toggle</button>
 </template>
 
-<script>
-// import { ref } from "vue";
-// let showFooter = ref(true);
-export default {
-  data() {
-    return {
-      showFooter: true,
-    };
-  },
-};
+<script setup>
+import { ref } from "vue";
+let showFooter = ref(true);
 </script>
 
 <style></style>
