@@ -1,21 +1,26 @@
 <template>
   <Navbar></Navbar>
 
-  <p>Iteration 1</p>
-  <div>Math operation {{ 2 + 2 }}</div>
+  <p class="font-bold">Iteration 1</p>
+  <div>Math operation: 2+2= {{ 2 + 2 }}</div>
 
-  <p>Iteration 2</p>
+  <p class="font-bold">Iteration 2</p>
   >
   <div>{{ operation(2, 3) }}</div>
 
-  <p>Iteration 4</p>
+  <p class="font-bold">Iteration 4</p>
   <Posts></Posts>
 
-  <p>Iteration 5</p>
-  <div :class="{ blue: changeColor }">I am learning Vue</div>
-  <button @click="changeColor = !changeColor">Toggle</button>
+  <p class="font-bold">Iteration 5</p>
+  <div :class="{ orange: changeColor }">I am learning Vue</div>
+  <button
+    class="border-solid border-2 border-amber-600 rounded mt-4 px-3 bg-amber-300"
+    @click="changeColor = !changeColor"
+  >
+    Toggle
+  </button>
 
-  <p>Iteration 3</p>
+  <p class="font-bold">Iteration 3</p>
   <Footer></Footer>
 </template>
 
@@ -32,8 +37,8 @@ let changeColor = ref(true);
 </script>
 
 <style>
-.blue {
-  background-color: blue;
+.orange {
+  background-color: orangered;
   color: white;
   width: 30rem;
   border: solid 1px black;
